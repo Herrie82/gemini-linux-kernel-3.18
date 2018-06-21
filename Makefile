@@ -629,6 +629,9 @@ KBUILD_CFLAGS   += -Wno-discarded-array-qualifiers
 # Kill logical not parentheses errors
 KBUILD_CFLAGS   += -Wno-logical-not-parentheses
 
+# Kill maybe uninitialized errors
+KBUILD_CFLAGS   += -Wno-maybe-uninitialized
+
 # Tell gcc to never replace conditional load with a non-conditional one
 KBUILD_CFLAGS	+= $(call cc-option,--param=allow-store-data-races=0)
 
